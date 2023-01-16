@@ -232,3 +232,67 @@ td:first-child{
     background: #bde1ff;
 }
 
+/*contact*/
+#contact h1{
+    color:#9ed034;
+    margin-left: 3%;
+}
+
+.phone, .email{
+    margin:10px 0;
+}
+.contactinfo, form{
+    margin-left: 3%;
+}
+
+form{
+    margin-top: 15px;;
+}
+
+input, label{
+    display: block;
+    
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+input[type="radio"]{
+    display: inline;
+    margin-bottom: 10px;
+}
+
+#inquiries, #contact-method{
+    display: inline;
+    margin-bottom: 30px;
+}
+
+
+#contact p{
+    color:rgb(178, 171, 171);
+}
+
+
+.commentbox{
+    margin-top: 15px;;
+}
+
+legend{
+    color:#4977d1;
+    text-transform:uppercase;
+    font-weight: bold;
+}
+
+span{
+    color:grey;
+}
+span:first-child{
+    color:black;
+}
+
+input[type="submit"]{
+    background-color: #4977d1;
+    color:white;
+    margin-left: 365px;
+}
