@@ -321,10 +321,7 @@ input[type="submit"]{
 figure{
     display:inline-block;
     padding: 2px;
-}
-
-#cliffs div{
-    margin: auto;
+  
 }
 
 figcaption{
@@ -341,5 +338,7 @@ figcaption{
 }
 
 .gallery{
-    margin:10px auto;
+    position:relative;
+    left:150px;
+    
 }
