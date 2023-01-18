@@ -30,6 +30,13 @@
     padding-top: 3em;
 }
 
+#cliffs header{
+    background: no-repeat lightgrey url(images/forest_cliff.jpeg);
+    background-size: 1500px;
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
 
 .main-header{
     background-color: rgb(255,255,255,0.8);
@@ -295,4 +302,44 @@ input[type="submit"]{
     background-color: #4977d1;
     color:white;
     margin-left: 365px;
+}
+
+
+/*Cliffs*/
+#cliffs h1{
+    color: #9ed034;
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pictures img{
+    width: 500px;
+    display: inline-block;
+    padding: 1%;
+}
+
+figure{
+    display:inline-block;
+    padding: 2px;
+}
+
+#cliffs div{
+    margin: auto;
+}
+
+figcaption{
+    position:relative;
+    bottom: 260px;
+    left:5px;
+    color: #fff;
+    background-color: #852b1b;
+    text-align: center;
+    width: 500px;
+    height: 30px;
+    padding-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery{
+    margin:10px auto;
 }
