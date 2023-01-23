@@ -112,6 +112,10 @@
         var min = d.getMinutes();
         var sec = d.getSeconds();
         var ampm; 
+        var utchr=d.getUTCHours();
+        var timeDiff;
+        var adjTimeDiff;
+        var timeZone;
 
         //add 0 to single digits for seconds
         if (sec<10){
@@ -133,6 +137,13 @@
     }else{
         ampm="AM";
     }
+
+    if(utchr>12){
+        utchr-=12;
+    }
+
+    timeDiff=hr-utchr;
+    
 
     //Assemble time format to display
     var time=hr+":"+min+":"+sec+" "+ampm;
