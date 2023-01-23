@@ -75,7 +75,7 @@
  
     <section >
         <ul id="partners">
-            <li class="partner">
+            <!-- <li class="partner">
                 <img src="images/partners/partner-bustour.png" atl="Partner Bus Tours">
             </li>
             <li class="partner">
@@ -92,7 +92,7 @@
             </li>
             <li class="partner">
                 <img src="images/partners/partner-tourgroup.png" atl="Partner Tour Group">
-            </li>
+            </li> -->
 
    
         </ul>
@@ -121,7 +121,30 @@
         <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
     </div> 
 </footer>
-  
+
+
+<!--Partner Script-->
+<script>
+    var photo=[];
+    var fileNames=[];
+    var imageList=[];
+    var image;
+    var openList="<li class='partner'>";
+    var closeList="</li>";
+
+    for (var i=0; i<6; i++){
+        fileNames.push("partner"+(i+1));
+        photo.push("<img src='images/partners/"+fileNames[i]+".png'>");
+        image=openList+photo[i]+closeList;
+        imageList.push(image);
+    }
+
+    //insert all final image elements in the album.
+
+    //Display
+    document.getElementById("partners").innerHTML=imageList.join(" ");
+
+</script>
 </body>
 </html>
 
