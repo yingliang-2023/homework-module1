@@ -55,6 +55,17 @@ img[src="images/logo.png"]{
 
 }
 
+#timeofday{
+    position: relative;
+    top: 220px;
+    height: 50px;
+    text-align:center;
+    padding-top: 22px;
+}
+
+#clock{
+    color:rgb(28, 28, 83)
+}
 
 /*Navigation*/
 .main-menu{
