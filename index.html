@@ -12,8 +12,9 @@
 
 <div id="container">
     
-    <header>
-    
+<header>
+
+<!--Nav Bar Section-->
     <div class="main-header">
         <div class="logo"></div>
         <img src="images/logo.png" atl="Great Cliffs Logo" width="125">
@@ -27,12 +28,17 @@
         </nav>
     </div>
 
- 
+ <!--Clock Section-->
+<section id="timeofday">
+    <span> Your Current Local Time: </span>
+    <span id="clock"> </span>
+</section>
+
     </header>
 </div>
 
 
-
+<!--Main Body-->
 <body id="home">
     
    
@@ -95,7 +101,57 @@
         <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
     </div> 
 </footer>
-  
+
+<!--Javascript Codes-->  
+<script>
+    //creat a time data function
+    function currentTime(){
+        //Declare Variables
+        var d= new Date();
+        var hr = d.getHours();
+        var min = d.getMinutes();
+        var sec = d.getSeconds();
+        var ampm; 
+
+        //add 0 to single digits for seconds
+        if (sec<10){
+            sec="0"+sec;
+        }
+
+        //add 0 to single digits for minutes
+        if(min<10){
+            min="0"+min;
+        }
+    
+
+    //Determine AM or PM string
+    if(hr ==12){
+        ampm="PM";
+    }else if(hr>12){
+        hr-=12;
+        ampm="PM";
+    }else{
+        ampm="AM";
+    }
+
+    //Assemble time format to display
+    var time=hr+":"+min+":"+sec+" "+ampm;
+
+    //Display current local time and time zone on HTML elements
+    document.getElementById("clock").innerText=time;
+}  
+    //Initial run of time data function
+    currentTime();
+
+    //Run time data function every 1 second
+    setInterval(currentTime,1000);
+
+</script>
+
+
+
+
+
 </body>
 </html>
 
