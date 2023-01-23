@@ -58,13 +58,14 @@ img[src="images/logo.png"]{
 #timeofday{
     position: relative;
     top: 220px;
-    height: 50px;
+    height: 40px;
     text-align:center;
     padding-top: 22px;
+    background-image: linear-gradient(rgb(251, 215, 139,1) 0%,rgb(118, 213, 245,1)100%);
 }
 
 #clock{
-    color:rgb(28, 28, 83)
+    color:rgb(15, 15, 225)
 }
 
 /*Navigation*/
