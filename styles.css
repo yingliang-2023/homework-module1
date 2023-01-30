@@ -311,9 +311,13 @@ span:first-child{
 }
 
 input[type="submit"]{
-    background-color: #4977d1;
+    /* background-color: #4977d1; */
     color:white;
     margin-left: 365px;
+    width: 8em;
+    height:2.5em;
+    font-weight: bold;
+    border:none;
 }
 
 
@@ -353,3 +357,20 @@ figcaption{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.randomcode input{
+    display: inline;
+   
+    left:200px;
+}
+
+#codes{
+    background-color:gray;
+    display: inline-block;
+    text-align: left;
+    padding: auto;
+}
+
+.randomcode{
+    position: relative;
+    left: 150px;
+}
