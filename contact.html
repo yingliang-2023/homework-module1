@@ -83,11 +83,22 @@
             <label>How did you hear about us:</label>  
             <textarea rows="10" cols="50"></textarea>
         </div>
-    
+        <!--Random Codes-->
+
+        <div class="randomcode">
+            <input type="text" name="randomcode" placeholder="Enter Characters">
+            <p id="codes"></p>
+        </div>
+
+
+
+
         <div class="button">
             <input type="submit" value="Inquire">
         </div> 
+
     </fieldset>  
+
     </form>
     <section>
         <ul id="partners">
@@ -114,28 +125,7 @@
    
         </ul>
    </section>  
-    <!--Partner Script-->
-<script>
-    var photo=[];
-    var fileNames=[];
-    var imageList=[];
-    var image;
-    var openList="<li class='partner'>";
-    var closeList="</li>";
-
-    for (var i=0; i<6; i++){
-        fileNames.push("partner"+(i+1));
-        photo.push("<img src='images/partners/"+fileNames[i]+".png'>");
-        image=openList+photo[i]+closeList;
-        imageList.push(image);
-    }
-
-    //insert all final image elements in the album.
-
-    //Display
-    document.getElementById("partners").innerHTML=imageList.join(" ");
-
-</script>
+   <script src="js/site_scripts.js"></script>
 </body>
 
 </html>
