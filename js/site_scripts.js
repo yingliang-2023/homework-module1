@@ -18,5 +18,8 @@ var photo=[];
         document.getElementById("partners").innerHTML=imageList.join(" ");
 
 
+        
+
+
 
         

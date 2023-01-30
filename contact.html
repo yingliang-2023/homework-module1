@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>wk1-d1-homework</title>
+
 </head>
 
 
@@ -32,7 +33,7 @@
 
 
 
-<body id="contact">
+<body id="contact" onLoad="disableButton(true)">
     <h1>Contacting Us</h1>
     <p>
     You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
@@ -87,17 +88,17 @@
 
         <!--Random Codes-->
         <div class="randomcode">
-            <input type="text" name="randomcode" placeholder="Enter Characters">
+            <input type="text" name="randomcode" placeholder="Enter Characters" id="codeentered">
             <p id="codes"></p>
         </div>
 
 
-        <div class="button">
-            <input type="submit" value="Inquire">
+        <div class="button" >
+            <input id="submit" type="submit" value="Inquire">
         </div> 
 
     </fieldset>  
-
+ 
     </form>
   
 
