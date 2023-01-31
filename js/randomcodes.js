@@ -1,8 +1,6 @@
 //function to generate combination of characters
-
+var code='';
 function generateCode(){
-    var code='';
-    var getCode='';
     var btnvalue;
     var str='ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
    
@@ -43,11 +41,14 @@ codebox.addEventListener("input",evaluateCode);
 
 
 function evaluateCode(){
-    getCode=document.getElementById("codeentered").value;
+
+    var getCode=document.getElementById("codeentered").value;
+   
     var charset1=getCode.trim();
     var charset2=code.trim();
-
-    if(charset.length==charset2.length && charset1==charset2){
+   
+    var result=charset1==charset2;
+       if(charset1.length==charset2.length&&charset1==charset2){
           disableButton(false);
       
     }
