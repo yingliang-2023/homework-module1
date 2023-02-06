@@ -320,6 +320,17 @@ input[type="submit"]{
     border:none;
 }
 
+.selectable:hover{
+    cursor: pointer;
+}
+.clickedCell{
+    background-color: #9ed034;
+    color:#fff;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
 
 /*Cliffs*/
 #cliffs h1{
