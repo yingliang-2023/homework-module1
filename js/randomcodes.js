@@ -13,14 +13,7 @@ function generateCode(){
     return code;
 }
 
-
 document.getElementById('codes').innerHTML=generateCode();
-
-
-
-
-
-
 
 function disableButton(btnvalue){
     document.getElementById("submit").disabled=btnvalue;
@@ -35,10 +28,8 @@ function disableButton(btnvalue){
 
 }
 
-
 var codebox=document.getElementById("codeentered");
 codebox.addEventListener("input",evaluateCode);
-
 
 function evaluateCode(){
 
