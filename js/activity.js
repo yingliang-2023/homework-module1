@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 
 $("td").click(function(){
+   
     var content=$(this).text();
     console.log(content);
     if (content != "Not Available"){
@@ -11,10 +12,12 @@ $("td").click(function(){
     }
 
 if($(this).hasClass('tdhighlight')){
-   console.log($(this).attr("class"));
-    $("#displaySelected").css("visibility","visible");
+    var number=$(this).index();
+    var cliffName=$("th").eq(number).text();
+    console.log(cliffName);
+        $("#displaySelected").css("visibility","visible");
     $("#displaySelected").css("margin-top","2em");
-    $('#result').append("<p>"+content+"</p>");
+    $('#result').append("<p>"+content+" at "+cliffName+"</p>");
 }else{
     $('#result p:contains('+content+')').remove();
     if($('#result').has('p').length==false){
